@@ -1,2 +1,2 @@
-# hdn_days
+# HdN Sobers
 HDN number of days without drinking
