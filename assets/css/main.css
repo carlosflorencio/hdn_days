@@ -467,6 +467,49 @@
 		width: 100%;
 	}
 
+.container {
+	width: 500px;
+	margin: 29px auto 0 auto;
+	padding-left: 59px;
+}
+
+.box {
+	width: 60px;
+	height: 55px;
+	background-color: white;
+	border-radius: 4px;
+	color: black;
+	font-weight: bold;
+	font-size: 42px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.block {
+	float: left;
+	margin-right: 20px;
+}
+
+.container p {
+	font-size: 21px;
+	margin-top: 10px;
+	color: white;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -627,7 +670,7 @@
 		}
 
 		#bg {
-			background-size: 750px auto;
+			background-size: 1550px auto;
 			width: 2250px;
 		} }
 
@@ -713,7 +756,7 @@
 		}
 
 		#bg {
-			background-size: 300px auto;
+			background-size: 1500px auto;
 			width: 900px;
 		}
 
@@ -811,8 +854,18 @@
 		}
 
 		#bg {
-			background-size: 412.5px auto;
+			background-size: 1500.5px auto;
 			width: 1237.5px;
+		}
+
+		.container {
+			width: 20%;
+			padding-left: 0;
+		}
+
+		.container p {
+			margin-top: 5px;
+			margin-bottom: 10px;
 		}
 
 	/* Header */
@@ -822,45 +875,3 @@
 		} }
 
 
-.container {
-	width: 500px;
-	margin: 29px auto 0 auto;
-	padding-left: 59px;
-}
-
-.box {
-	width: 60px;
-	height: 55px;
-	background-color: white;
-	border-radius: 4px;
-	color: black;
-	font-weight: bold;
-	font-size: 42px;
-	padding-top: 10px;
-	text-align: center;
-}
-
-.block {
-	float: left;
-	margin-right: 20px;
-}
-
-.container p {
-	font-size: 21px;
-	margin-top: 10px;
-	color: white;
-}
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
